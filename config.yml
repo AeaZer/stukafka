@@ -3,7 +3,7 @@ http:
 
 service:
   kafka:
-    host: 'www.areazer.top'
+    host: '127.0.0.1'
     port: 9092
     network: 'tcp'
     topic: 'stu_kafka'

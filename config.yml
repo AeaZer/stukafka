@@ -1,0 +1,10 @@
+http:
+  port: 80
+
+service:
+  kafka:
+    host: 'www.areazer.top'
+    port: 9092
+    network: 'tcp'
+    topic: 'stu_kafka'
+    partition: 0

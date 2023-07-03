@@ -3,9 +3,12 @@ package kafka
 import (
 	"context"
 	"fmt"
+
 	"github.com/segmentio/kafka-go"
 )
 
+// InitKafkaConnect
+// TODO: init Writer instead Conn
 func InitKafkaConnect(conf *Config) (*kafka.Conn, error) {
 	conn, err := kafka.DialLeader(context.Background(),
 		conf.Network, fmt.Sprintf("%s:%d", conf.Host, conf.Port), conf.Topic, conf.Partition)

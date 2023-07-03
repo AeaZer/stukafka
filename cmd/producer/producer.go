@@ -27,5 +27,5 @@ func newWebServer(port int) {
 	{
 		doc.POST("/add", producer.Add())
 	}
-	router.Run(fmt.Sprintf(":%d", port))
+	_ = router.Run(fmt.Sprintf(":%d", port))
 }
